@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="TSG 2018 Official" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://tsg2018.info/img/share-fb.gif" />
+    <meta property="og:description" content="TSG 2018 Announcement. You can get all the information about the event here!" />
+    <meta property="og:site_name" content="TSG 2018 Official" />
+
+    <!-- website title -->
+    <title>TSG 2018 Official</title>
+
+    <!-- Favicon -->
+    <link rel=icon href="img/tsg-logo.png" sizes="16x16" type="image/png">
+
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+            <!-- menu section -->
+            <!-- data-transition="overlap" -->
+            <div class="off-canvas position-left" id="mobile-menu" data-off-canvas>
+                <?php include("inc/menu.php"); ?>
+            </div>
+
+            <div class="off-canvas-content" data-off-canvas-content>
+                <div class="container">
+                    <header>
+                        <div class="top-area clearfix">
+                            <img src="img/logo.png" alt="tsg 2018 logo" class="logo" id="logo">
+                            <div class="countdown">
+                                <div id="dd">
+                                    <p class="number lang"></p>
+                                    <p class="desc lang" data-key="dd">&#160;</p>
+                                </div>
+                                <div id="hh">
+                                    <p class="number lang"></p>
+                                    <p class="desc lang" data-key="hh">&#160;</p>
+                                </div>
+                                <div id="mm">
+                                    <p class="number lang"></p>
+                                    <p class="desc lang" data-key="mm">&#160;</p>
+                                </div>
+                                <div id="ss">
+                                    <p class="number lang"></p>
+                                    <p class="desc lang" data-key="ss">&#160;</p>
+                                </div>
+                            </div>
+                            <div class="register-count" style="display: none;">
+                                <p class="number">
+                                    234
+                                </p>
+                                <p class="desc lang" data-key="register-text"></p>
+                            </div>
+                        </div>
+
+                        <nav class="hide-for-small-only">
+                            <ul class="menu clearfix">
+                                <li>
+                                    <a class="lang" href="index.html" data-key="home"></a>
+                                </li>
+                                <li>
+                                    <a class="lang" href="intro.html" data-key="intro"></a>
+                                </li>
+                                <li>
+                                    <a class="lang" href="ambass.html" data-key="ambass"></a>
+                                </li>
+                                <li>
+                                    <a class="lang" href="program.html" data-key="program"></a>
+                                </li>
+                                <!-- <li>
+        <a class="lang" href="register.html" data-key="register"></a>
+    </li> -->
+                                <li>
+                                    <a class="lang" href="info.html" data-key="info"></a>
+                                </li>
+                                <div class="lang-choice">
+                                    <button class="translate" id="en">En</button>
+                                    <button class="translate" id="vi">Vi</button>
+                                </div>
+                            </ul>
+                        </nav>
+
+                        <div class="title-bar show-for-small-only">
+                            <div class="title-bar-left">
+                                <button class="menu-icon" type="button" data-open="mobile-menu"></button>
+                                <span class="title-bar-title">Menu</span>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div class="menu-divider"></div>
+
+                {{content}}
+
+                <!-- footer of the page -->
+                <footer class="text-center">
+                    <img src="img/tsg-logo.png" alt="tsg Logo">
+                    <h2>The Straits Games</h2>
+                    <p class="footer-contact">
+                        <span class="lang" data-key="footer1"></span> <br>
+                        <span class="email">tsg2018saigon@gmail.com</span> <br>
+                        <span class="lang" data-key="footer2"></span>
+                    </p>
+                </footer>
+            </div>
+            <!-- END off-canvas-content -->
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/what-input.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/data-lang.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
