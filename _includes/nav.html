@@ -1,0 +1,26 @@
+<nav class="hide-for-small-only">
+    <ul class="menu clearfix">
+        <li class="{% if page.url == '/' %}active{% endif %}">
+            <a class="lang" href="{{site.baseurl}}/" data-key="home"></a>
+        </li>
+        <li class="{% if page.url == '/intro.html' %}active{% endif %}">
+            <a class="lang" href="{{site.baseurl}}/intro.html" data-key="intro"></a>
+        </li>
+        <li class="{% if page.url == '/ambass.html' %}active{% endif %}">
+            <a class="lang" href="{{site.baseurl}}/ambass.html" data-key="ambass"></a>
+        </li>
+        <li class="{% if page.url == '/program.html' %}active{% endif %}">
+            <a class="lang" href="{{site.baseurl}}/program.html" data-key="program"></a>
+        </li>
+        <!-- <li class="{% if page.url == '/register.html' %}active{% endif %}">
+<a class="lang" href="{{site.baseurl}}/register.html" data-key="register"></a>
+</li> -->
+        <li class="{% if page.url == '/info.html' %}active{% endif %}">
+            <a class="lang" href="{{site.baseurl}}/info.html" data-key="info"></a>
+        </li>
+        <div class="lang-choice">
+            <button class="translate" id="en">En</button>
+            <button class="translate" id="vi">Vi</button>
+        </div>
+    </ul>
+</nav>
